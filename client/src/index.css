@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9; /* Light background for contrast */
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: white;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.tab {
+  background: none;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+}
+
+.tab:hover {
+  background-color: #444;
+}
+
+.active-tab {
+  background-color: #555;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+form input,
+form textarea,
+form button {
+  margin: 15px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form input:focus,
+form textarea:focus,
+form button:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+.list-email{
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* Table Styles */
+table {
+  width: 100%;
+  max-width: 800px;
+  margin:0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #007bff;
+  color: white;
+  text-transform: uppercase;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
